@@ -39,7 +39,10 @@ public class Tools {
     public static String redirect(String d, String path) {
         if (d.length() > 0) { // откроется,  когда не пустая строка
             // Возврат пользователя
-            if ("index".equals(d)) {
+            if ("/list/update".equals(d)) {
+                return path;
+            }
+            else if ("index".equals(d)) {
                 return "";
             } else if ("back".equals(d)) {
                 return backPath(path);
